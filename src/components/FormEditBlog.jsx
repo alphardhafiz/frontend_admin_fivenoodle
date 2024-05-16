@@ -57,7 +57,7 @@ const FormEditBlog = () => {
     formData.append("Kategori", category);
 
     try {
-      await axios.patch(`http://localhost:5000/blog/${id}`, formData, {
+      await axios.patch(`http://localhost:5001/blog/${id}`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
